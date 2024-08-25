@@ -1,0 +1,320 @@
+header h1 {
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 3em; 
+    color: #FFD700; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header p {
+    font-family: 'Georgia', serif; 
+    font-size: 1.5em; 
+    color: #e8267a; 
+    margin: 0;
+    padding-top: 10px;
+    max-width: 100%; 
+    text-align: center; 
+}
+
+#list {
+    display: flex;
+    justify-content: center;  
+    list-style-type: none; 
+    padding: 0;
+    margin: 20px;
+    background-color: #da7c7c; 
+}
+    
+    
+#list li {
+    margin: 0 15px; 
+}
+    
+   
+#list li a {
+    color: rgb(11, 10, 8); 
+    text-decoration: none; 
+    font-size: 1.2em; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+    border-radius: 50px; 
+}
+    
+    
+#list li a:hover {
+    background-color: #555; 
+    color: #ffcc00; 
+}
+
+section {
+    display: flex;
+    flex-direction: column; 
+    gap: 50px; 
+    align-items: center; 
+    padding: 20px;
+    background-color: rgba(226, 204, 204, 0.8);  
+}
+
+
+
+
+
+article.ar {
+    display: flex;
+    flex-direction: column;
+    background-color: #b5c282; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    max-width: 800px;
+    margin: 20px auto; 
+    align-items: center;
+}
+
+
+article.ar:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+
+article.ar h3 {
+    font-size: 1.8rem;
+    color: #333; 
+    margin-bottom: 5px;
+}
+
+article.ar i {
+    color: #777; 
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+
+article.ar h2 {
+    font-size: 2rem;
+    color: #007bff; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+article.ar p {
+    line-height: 1.6;
+    color: #555; 
+    margin-bottom: 15px;
+}
+
+
+article.ar img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+
+article.ar img:hover {
+    transform: scale(1.05); 
+}
+
+
+article.ar video {
+    margin-top: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+article.ar p:last-of-type {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #007bff; 
+    text-align: center; 
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd; 
+}
+
+
+@media (max-width: 768px) {
+    article.ar {
+        padding: 15px;
+    }
+
+    article.ar img, 
+    article.ar video {
+        width: 100%;
+        height: auto; 
+    }
+
+    article.ar h3 {
+        font-size: 1.5rem;
+    }
+
+    article.ar h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.about-me-section {
+    background-color: #f9f9f9; 
+    border-left: 5px solid #4CAF50; 
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+}
+
+.about-me-section h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-me-section p {
+    font-family: 'Georgia', serif;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.about-me-section p::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+.contact {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contact h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: vertical; 
+}
+
+.contact button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #45a049; 
+}
+
+
+.connect {
+    background-color: #333; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #4CAF50; 
+}
+
+.connect h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4CAF50; 
+}
+
+.connect p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.connect a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.connect a:hover {
+    color: #45a049; 
+}
+
+.connect ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.connect ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.connect ul li a {
+    font-size: 18px;
+}
+
+.connect ul li a::before {
+    content: '• '; 
+    color: #4CAF50; 
+}
+
+.connect ul li a:hover {
+    color: #45a049; 
+}
+
+footer p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(226, 204, 204, 0.8); 
+}
